@@ -10,12 +10,12 @@ This is advanced fully functional keylogger build from scratch with C++ for Wind
 
 ## Progress of the project
 
-| Task                                        | Current Status |        Done                   |
-|---------------------------------------------|----------------|-------------------------------|
-| Added main.cpp in ./app/src                 |   in progress  | :negative_squared_cross_mark: |
-| Added KeyConstrants.h in ./library/include/ |   Done         | :white_check_mark:            |
-| Added Helper.h in ./library/include/        |   Done         | :white_check_mark:            |
-| Added Base64.h in ./library/include/        |   in progress  | :negative_squared_cross_mark: |
+| Task                                        | Current Status                              |
+|---------------------------------------------|---------------------------------------------|
+| Added main.cpp in ./app/src                 |   in progress :negative_squared_cross_mark: |
+| Added KeyConstrants.h in ./library/include/ |   Done        :white_check_mark:            |
+| Added Helper.h in ./library/include/        |   Done        :white_check_mark:            |
+| Added Base64.h in ./library/include/        |   in progress :negative_squared_cross_mark: |
 
 ### Some info about headers
 
