@@ -1,6 +1,6 @@
 # Fully Functional Keylogger  
 
-## Intoruction  
+## Introduction  
 
 I took this [Udemy Course](https://www.udemy.com/how-to-create-an-advanced-keylogger-from-scratch-for-windows "Build an Advanced Keylogger using C++ for Ethical Hacking! - Created by Ermin Kreponic") to improve my programming knowledge in C++, and also, because I want to learn about CMake build system generator, I will use CMake for this application.
 
@@ -21,3 +21,6 @@ This is advanced fully functional keylogger build from scratch with C++ for Wind
 ### Info about Headers
 
 * Base64.h: Modified version of *Base64 Algorithm* for encoding *Encryption* and *Decription*.
+
+* IO.h: All functions for *input / output* operations like:
+creating files, reading from them, finding paths etc.
