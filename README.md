@@ -19,4 +19,4 @@ This is advanced fully functional keylogger build from scratch with C++ for Wind
 
 ### Some info about headers
 
-* Base64.h: *Base64 Algorithm* for encoding *Encryption* and *Decription*.
+* Base64.h: Modified version of *Base64 Algorithm* for encoding *Encryption* and *Decription*.
