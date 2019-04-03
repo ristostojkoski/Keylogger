@@ -17,6 +17,6 @@ This is advanced fully functional keylogger build from scratch with C++ for Wind
 | Added Helper.h in ./library/include/        |   Done        :white_check_mark:            |
 | Added Base64.h in ./library/include/        |   in progress :negative_squared_cross_mark: |
 
-### Some info about headers
+### Info about Headers
 
 * Base64.h: Modified version of *Base64 Algorithm* for encoding *Encryption* and *Decription*.
