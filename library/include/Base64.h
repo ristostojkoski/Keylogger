@@ -86,6 +86,39 @@ namespace Base64
 
         return s;
     }
+
+    const std::string &BASE64_CODES = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    std::string base64_encode(const std::string &s)
+    {
+        std::string ret; // output string filled with encoded chars
+        int val = 0; // index of map input base64 codes table
+        int bits = -6; // represent number of bits in a sub group
+        const unsigned int b63 = 0x3F; // in decimal value is 63
+
+        for(auto &c : s) // every char c from string s
+        {
+            val = (val << 8) + c;
+            // '<<' stand for left binary shifting but it this particular case
+            // is a bit wise operation and << 8 means that the resulting number
+            // will be shifted left by 8 places or is equal to
+            // val= (val << 8) is same as val = val * 2^8
+            bits += 8; // will add 8 to number of bits base64 works with octets 
+            // when extracting information from original string
+            while(bits >= 0)
+            {
+                ret.push_back(BASE64_CODES[(val >> bits) &b63]);
+                bits -= 6; //grouping by six so we take -6
+            }
+        }
+        if(bits > -6)
+            ret.push_back(BASE64_CODES[((val << 8) >> (bits + 8)) &b63]);
+        
+        while(ret.size() % 4)
+            ret.push_back('=');
+
+        return ret;
+    }
 }
 
 
