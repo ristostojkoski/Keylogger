@@ -8,7 +8,7 @@ project(Keylogger_CMake
 
 
 # Create targets for building the (local) libraries.
-add_subdirectory(library)
+add_subdirectory(include)
 
 # Create the targets for the entire app.
 add_subdirectory(app)
