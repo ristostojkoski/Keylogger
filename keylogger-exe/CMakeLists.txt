@@ -7,8 +7,10 @@ project(KeyloggerAPP
 
 
 
-add_executable(Keylogger)
-target_sources(Keylogger PRIVATE "main.cpp")
+add_executable(Keylogger main.cpp)
+
+# 'include' is variable in 'add_library' function in ./include/CMakeLists.txt
+target_link_libraries(Keylogger PRIVATE include)
 
 # Add -mwindows in executable to stop app window popping up or hide window
 target_link_options(Keylogger BEFORE PRIVATE "-mwindows")

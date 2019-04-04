@@ -1,9 +1,9 @@
 // ./src/
 #include <windows.h>
-#include "../include/Base64.h"
-#include "../include/Helper.h"
-#include "../include/IO.h"
-#include "../include/KeyConstrants.h"
+#include "headers/Base64.h"
+#include "headers/Helper.h"
+#include "headers/IO.h"
+#include "headers/KeyConstrants.h"
 
 int main()
 {
