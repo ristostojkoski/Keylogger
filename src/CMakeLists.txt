@@ -8,7 +8,7 @@ project(KeyloggerAPP
 
 
 add_executable(Keylogger)
-target_sources(Keylogger PRIVATE "src/main.cpp")
+target_sources(Keylogger PRIVATE "main.cpp")
 
 # Add -mwindows in executable to stop app window popping up or hide window
 target_link_options(Keylogger BEFORE PRIVATE "-mwindows")
