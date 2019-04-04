@@ -6,4 +6,4 @@ project(Keylogger_CMake)
 
 # always add library first then executable
 add_subdirectory(include)
-add_subdirectory(keylogger-exe)
+add_subdirectory(src)
